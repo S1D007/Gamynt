@@ -17,7 +17,7 @@ import 'aos/dist/aos.css';
 const Signup = () => {
   const provider = new GoogleAuthProvider();
   // states 
-  let router = useRouter()
+  let route = useRouter()
 
   useEffect(() => {
     AOS.init();
@@ -88,6 +88,7 @@ function validname() {
               // Signed in 
               const user = userCredential.user;
               console.log(user)
+              localStorage.setItem("signup",true)
               route.push("/")
               // ...
             })
@@ -106,6 +107,8 @@ const handleGoogleSignup = () => {
   signInWithPopup(auth, provider)
     .then((result) => {
       console.log(result)
+      localStorage.setItem("signup",true)
+
     route.push("/")
       // This gives you a Google Access Token. You can use it to access the Google API.
       const credential = GoogleAuthProvider.credentialFromResult(result);
