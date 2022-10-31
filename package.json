@@ -22,7 +22,6 @@
     "aos": "^3.0.0-beta.6",
     "axios": "^0.27.2",
     "code-runner": "^1.0.7",
-    "firebase": "^9.13.0",
     "javascript-code-runner": "^1.0.9",
     "next": "13.0.0",
     "react": "18.2.0",

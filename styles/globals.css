@@ -1,18 +1,16 @@
 
 :root{
-  --font-light: rgb(255, 255, 255);
+  --font-light: rgb(231, 231, 231);
   --font-dark: rgb(17, 17, 17);
   --black: rgb(10, 10, 10);
   --black-rgb: 1, 1, 1;
-  --primary-color:#0d0d0d;
+  --primary-color:rgb(54, 54, 54);
   --primary-rgb: 55, 55, 55;
   /* --secondry-color: rgb(38, 235, 186); */
-  --secondry-color: #fd4147cc;
+  --secondry-color: rgb(255, 115, 99);
   /* --secondry-rgb: 27, 216, 169; */
   --secondry-rgb: 255, 115, 99;
   --links-color: rgb(0, 89, 255);
-  --shadow-color: #ab9eff;
-  --shadow-color-light: white;
   /* --button-color-editor: 27, 216, 169; */
 }
 *{

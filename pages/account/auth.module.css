@@ -3,13 +3,13 @@
     flex-direction: column;
     width: 100vw;
     height: calc(100vh - 3.5rem);
-    background-color: #0d0d0d;
+    background-color: rgb(var(--black-rgb));
 }
 .auth_main{
     margin: auto;
     display: flex;
     background-color: rgba(var(--primary-rgb), 0);
-    color: #fff;
+    color: var(--font-light);
     width: 90%;
     height: 80%;
     max-width: 60rem;
@@ -36,7 +36,7 @@
     background-color: rgba(var(--secondry-rgb), 1);
     display: grid;
     place-items: center;
-    box-shadow: 5px 5px 20px #FD4147 inset;
+    box-shadow: 5px 5px 20px rgba(243, 243, 243, 0.671) inset;
 }
 
 .auth_ui_section div::before{
@@ -53,7 +53,7 @@
 /* /// form ui   */ 
 .auth_ui_form{
     padding: 7%;
-    background-color: rgba(var(--primary-rgb), 0.5);
+    background-color: rgba(var(--primary-rgb), 1);
 }
 .auth_ui_form header{
     margin: 0.5rem auto;
@@ -63,7 +63,8 @@
 .auth_ui_form header span{
     display: block;
     margin: 0.5rem 0rem 0rem;
-    color: rgb(255, 115, 115);
+    -webkit-text-stroke: 0.1px red;
+    color: red;
     height: 2rem;
 }
 .input_box{

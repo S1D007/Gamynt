@@ -1,5 +1,5 @@
 .main_page {
-  /* background-color: rgba(var(--black-rgb)); */
+  background-color: rgba(var(--black-rgb));
   background-color: #0d0d0d;
   color: var(--font-light);
 }
@@ -41,28 +41,11 @@
 .home_getstarted h2 span,
 .home_getstarted h3 span,
 .home_getstarted p span {
-  color: rgba(var(--secondry-rgb), 1);
-}
-@keyframes neon {
-  0% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
-    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
-    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
-  }
-  50% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
-    0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
-    0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
-  }
-  100% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
-    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
-    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
-  }
+  color: rgba(var(--secondry-rgb), 0.8);
 }
 .home_getstarted p {
   font-size: clamp(0.9rem, calc(1rem + 1vw), 1.2rem);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .home_btns {
   margin: 1rem;
@@ -88,15 +71,10 @@
 .landing_img {
   position: absolute;
   z-index: 1;
-  width: 100%;
+  width: 95%;
   opacity: 0.1;
 }
 
-@media (max-width: 1920px) {
-  .landing_img{
-    display: none;
-  }
-}
 
 
 .grid_about{

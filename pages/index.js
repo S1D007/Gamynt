@@ -22,7 +22,7 @@ export default function index() {
           <h2>register now to get free rewards and gifts</h2>
             <button onClick={() => {router.push("/account/signup")}}>register<ArrowForwardIcon/></button>
         </section>
-        <Image className={style.landing_img}  width={640} height={640} src="/landing_ui.gif" alt="img" />
+        <Image className={style.landing_img}  width={400} height={800} src="/landing_ui.gif" alt="img" />
       </main>
       <main className={style.about_container}>
       <About /> 

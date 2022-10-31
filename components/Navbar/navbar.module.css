@@ -32,7 +32,7 @@
 .links_and_more button{
     padding: 0.4rem 2rem;
     border: 2px solid transparent;
-    background-color: rgba(var(--secondry-rgb));
+    background-color: rgba(var(--secondry-rgb) , 0.8);
     box-shadow: 0px 5px 15px rgba(var(--secondry-rgb) , 0.2);
     color: var(--font-dark);
     transition: 0.30s ease;
