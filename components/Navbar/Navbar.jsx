@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
 import style from "./navbar.module.css"
-import ClearAllIcon from '@mui/icons-material/ClearAll';
-import CloseIcon from '@mui/icons-material/Close';
-import SearchIcon from '@mui/icons-material/Search';
-
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 import Image from 'next/image';
@@ -13,9 +9,12 @@ const Navbar = () => {
   // init of router
   const router = useRouter()
   const [handlemenu, sethandlemenu] = useState("")
+  const [registered, setregistered] = useState(false)
   const togglemenu = () => {
     if (handlemenu == "") { sethandlemenu(style.open_menu) } else { sethandlemenu("") }
   }
+  /// user name first letter 
+  let username = "p"
 
   return (
     <nav className={style.main_nav}>
@@ -29,7 +28,14 @@ const Navbar = () => {
       </section>
 
       <section className={`${style.links_and_more}`}>
+        {
+          registered === true?
+            <div className={style.registered_uer}>
+              <p>{username}</p>
+            </div>
+          :
           <button onClick={() => { router.push("/account/signup"); togglemenu() }}>Register</button>
+        }
       </section>
     </nav>
   )

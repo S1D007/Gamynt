@@ -48,6 +48,23 @@
     width: 90%;
 }
 
+/* //// registered user  */
+
+.registered_uer{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+.registered_uer p{
+    width: 2.5rem;
+    line-height: 2.5rem;
+    background-color: rgba(var(--secondry-rgb) ,0.9);
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    font-weight: 700;
+}
 
 @media (max-width:950px) {
     .main_nav{

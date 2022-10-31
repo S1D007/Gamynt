@@ -14,7 +14,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Signup = () => {
-  let router = useRouter()
+  let route = useRouter()
 
   useEffect(() => {
     AOS.init();
@@ -81,7 +81,8 @@ function validname() {
             console.log("fine your data is =>", finaldata)
             setusername(""); setphone(""); setpassword("");
             setconfirmpassword("");setautherror("")
-            
+            //add router
+            route.push("/")
           }
     }
   return (
@@ -131,10 +132,9 @@ function validname() {
             </div>
             {/* ------password ------ */}
             <button data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="0"  data-aos-duration="900"  className={style.auth_btn}>register</button>
-
             <div className={style.or}><hr />or<hr /></div>
             <section className={style.login_with_container}>
-                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100"  data-aos-duration="900"  ><Image src={"/google_icon.svg"} alt="img" width={28}  height={28}/> register with gogle</div>
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100"  data-aos-duration="900"  ><Image src={"/google_icon.svg"} alt="img" width={28}  height={28}/> register with google</div>
             </section>
         </form>
         </main>

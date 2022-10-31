@@ -48,10 +48,11 @@
 .home_getstarted h3 span,
 .home_getstarted p span {
   color: rgba(var(--secondry-rgb), 0.8);
+  font-weight: bold;
 }
 .home_getstarted p {
   font-size: clamp(0.7rem, calc(1rem + 1vw), 1.2rem);
-  opacity: 0.8;
+  opacity: 0.85;
 }
 .home_btns {
   margin: 1rem;
@@ -79,7 +80,7 @@
   position: absolute;
   z-index: 1;
   width: 100%;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 
