@@ -88,6 +88,7 @@ function validname() {
               // Signed in 
               const user = userCredential.user;
               console.log(user)
+              route.push("/")
               // ...
             })
             .catch((error) => {
