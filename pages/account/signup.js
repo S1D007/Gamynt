@@ -8,8 +8,18 @@ import MailIcon from '@mui/icons-material/Mail';
 import PhoneIcon from '@mui/icons-material/Phone';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import { useRouter } from 'next/router';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Signup = () => {
+  let router = useRouter()
+
+  useEffect(() => {
+    AOS.init();
+}, [])
+
     // states 
     const [passtype, setpasstype] = useState("password")
     const [confirmpasstype, setconfirmpasstype] = useState("password")
@@ -71,12 +81,13 @@ function validname() {
             console.log("fine your data is =>", finaldata)
             setusername(""); setphone(""); setpassword("");
             setconfirmpassword("");setautherror("")
+            
           }
     }
   return (
     <main className={style.main_page}>
         {/* this main containeir for max width and for resposnive ui   */}
-        <main className={style.auth_main}>
+        <main data-aos="fade-up" data-aos-delay="100" data-aos-duration="900"  className={style.auth_main}>
             {/* /// ui container  */}
             <section className={style.auth_ui_section}>
                 <div></div>
@@ -119,11 +130,11 @@ function validname() {
               </div>
             </div>
             {/* ------password ------ */}
-            <button className={style.auth_btn}>register</button>
+            <button data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="0"  data-aos-duration="900"  className={style.auth_btn}>register</button>
 
             <div className={style.or}><hr />or<hr /></div>
             <section className={style.login_with_container}>
-                <div><Image src={"/google_icon.svg"} alt="img" width={28}  height={28}/> register with gogle</div>
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100"  data-aos-duration="900"  ><Image src={"/google_icon.svg"} alt="img" width={28}  height={28}/> register with gogle</div>
             </section>
         </form>
         </main>

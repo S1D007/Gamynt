@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className={style.main_nav}>
       <section className={style.logo}>
         <Link href="/">
-          <Image width={200} height={100} src="/gamint_logo.png" alt="img" />
+          <Image className={style.nav_logo} width={150} height={100} src="/logo_3.png" alt="img" />
         </Link>
       </section>
 
